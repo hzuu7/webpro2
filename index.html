@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="./css/port4.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>KIRSH BLENDING</title>
+</head>
+<body style = "overflow-x: hidden;">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <div class = "header_menu_wrap">
+
+    <div class = "header_logo">
+      <img src = "image/port4/logo_image_png(2).png">
+    </div>
+
+    <div class = "header_menu">
+    <ul class = "menu">
+      <li>All</li>
+      <li>Brand</li>
+      <li>Event</li>
+      <li>News</li>
+    </ul>
+  </div> <!--메뉴 끝-->
+
+  <div class = "header_icon">
+    <div class = "xi-users-o xi-2x hicon"></div>
+    <div class = "xi-heart xi-2x hicon"></div>
+    <div class = "xi-market xi-2x hicon"></div>
+    <div class = "xi-search xi-2x hicon"></div>
+  </div> <!--아이콘 끝-->
+  
+  </div>
+
+
+<!-- 헤더 슬라이드 -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide header_slide">
+       <img src="./image/port4/header_banner1.jpg"> 
+       <div class = "header_txt_box">
+        <div class = "header_txt_main"><h5><span>먼작귀</span>와 키르시 블렌딩이 함께한</h5></div>
+        <div class = "header_txt_sub"><p class = "slide1_tag_txt">#특별한 #콜라보♥</p></div>
+       </div> <!--txt박스 끝-->
+      </div>
+
+      <div class="swiper-slide header_slide">
+        <img src = "./image/port4/header_banner5.jpeg">
+        <div class = "header_txt_box">
+          <div class = "header_txt_main"><h5>베이스, 음영 섀도우부터 블러셔까지 한 번에!</h5>
+          <h5>뮤트한 파스텔 색감 조합으로</h5>
+          <h5 class = "slide2_txt_color">피부 톤에 따라 고르는 데일리 멀티 팔레트</h5></div>
+          <div class = "header_txt_sub"><p class = "slide2_txt_color">#다_소장하고픈 #먼작귀에디션 #파스텔뮤트 #올인원팔레트</p></div>
+         </div>
+      </div>
+
+      <div class="swiper-slide header_slide">
+        <img src = "./image/port4/header_banner4.jpeg">
+        <div class = "header_txt_box">
+          <div class = "header_txt_main"><h5>보송보송한 구름이 닿은 듯</h5>
+          <h5 class = "slide3_txt_color">부드럽고 포근한 제형이 입술을 감싸주는 벨벳 틴트</h5></div>
+          <div class = "header_txt_sub"><p class = "slide3_txt_color">#다_소장하고픈 #먼작귀틴트 #소프트벨벳 #구름틴트</p></div>
+         </div>
+      </div>
+
+      <div class="swiper-slide header_slide">
+        <img src = "./image/port4/header_banner6.jpg">
+        <div class = "header_txt_box">
+          <div class = "header_txt_main"><h5>수분 베이스로 부드럽게 발리고 물기를 머금은 듯</h5>
+          <h5 class = "slide4_txt_color">촉촉하고 다채롭게 반짝이는 아이 글리터</h5></div>
+          <div class = "header_txt_sub"><p class = "slide4_txt_color">#다_소장하고픈 #먼작귀글리터 #멀티글리터 #영롱글리터</p></div>
+         </div>
+      </div>
+
+      
+    </div>
+    <!-- <div class="swiper-pagination"></div> -->
+  </div>
+
+<!--두번째-->
+
+
+<section class="event_section">
+  <div class="event_img">
+      <img src="image/port4/background.jpg">
+  </div>
+
+
+  <div class="event_txt">
+      <h2>KIRSH BLENDING ♥ EVENT</h2>
+      <ul class="event_menu_wrap">
+          <li class="ss">구매 증정 이벤트</li>
+          <li>리뷰 이벤트</li>
+          <li>#체리산타 이벤트</li>
+      </ul>
+      <div class="event_menu">
+          <div>먼작귀 3종 세트 구매시 브러쉬 세트 증정!</div>
+          <div>베스트 리뷰 5명을 선정해 먼작귀 에디션 전 제품 증정!</div>
+          <div>먼작귀 소품으로 크리스마스 or 연말 분위기를 꾸민 뒤, <br>
+            키르시 블렌딩 인스타에 있는 체리 사진을 합성하여 <br>
+            @KIRSH_BLENDING #체리산타 #먼작귀 태그를 한 뒤 스토리에 올리고 <br>
+            먼작귀 틴트 OR 글리터 중 갖고 싶은 제품 소원을 빌면 끝!</div>
+      </div>
+
+      <div class="event_btn">
+          <button class="btn1">더보기</button>
+      </div>
+  </div>
+</section>
+
+<script>
+  $('.event_menu>div').eq(0).show();
+
+  $('.event_menu_wrap li').click(function(){
+      $('.event_menu>div').hide(); //일단 모든것을 가리기
+      var mynum = $(this).index(); //나의 인덱스
+      $('.event_menu>div').eq(mynum).show(); 
+
+      $('.event_menu_wrap li').removeClass('ss');
+      $(this).addClass('ss');
+  });
+  
+</script>
+
+
+<section>
+
+  <!-- 슬라이드 -->
+
+  <div data-aos="fade-right" class = "pro_txt_box">
+    <h1>KIRSH BLENDING ♥ 먼작귀🍒</h1>
+    <h4>먼작귀와 키르시 블렌딩이 함께한 특별한 콜라보!</h4>
+    </div>
+    <div class="swiper mySwiper2">
+      <div class="swiper-wrapper product_slide_img_wrap">
+        <div class="swiper-slide product_slide_img">
+          <img src = "./image/port4/product_img0.jpg" class = "img_hover1">
+          <img src = "./image/port4/product_img0-2.jpg" class = "img_hover2">
+          <div class = "product_slide_txt">
+          <h4>먼작귀 3종 세트</h4>
+          <p>46,000원 <del class = "del_price">57,500원</del><span> 20%</span></p>
+        </div> <!--product slide txt 끝-->
+        </div>
+        <div class="swiper-slide product_slide_img">
+          <img src = "./image/port4/product_img1.png" class = "img_hover1">
+          <img src = "./image/port4/product_img1-2.jpg" class = "img_hover2">
+          <div class = "product_slide_txt">
+          <h4>먼작귀 2종 세트</h4>
+          <p>24,220원 <del class = "del_price">28,500원</del><span> 15%</span></p>
+        </div> <!--product slide txt 끝-->
+        </div>
+        <div class="swiper-slide product_slide_img">
+          <img src = "./image/port4/product_img2.jpg" class = "img_hover1">
+          <img src = "./image/port4/product_img2-2.jfif" class = "img_hover2">
+          <div class = "product_slide_txt">
+          <h4>아이드리밍 파레트 2컬러</h4>
+          <p>26,100원 <del class = "del_price">29,000원</del><span> 10%</span></p>
+        </div> <!--product slide txt 끝-->
+        </div>
+        <div class="swiper-slide product_slide_img">
+          <img src = "./image/port4/product_img3.jfif" class = "img_hover1">
+          <img src = "./image/port4/product_img3-2.jpg" class = "img_hover2">
+          <div class = "product_slide_txt">
+          <h4>코튼 클라우드 립 틴트 3컬러</h4>
+          <p>12,100원<del class = "del_price">13,500원</del><span> 10%</span></p>
+        </div> <!--product slide txt 끝-->
+        </div>
+        <div class="swiper-slide product_slide_img">
+          <img src = "./image/port4/product_img4.jpg" class = "img_hover1">
+          <img src = "./image/port4/product_img4-2.jfif" class = "img_hover2">
+          <div class = "product_slide_txt">
+          <h4>아이 듀 글리터 젤 3컬러</h4>
+          <p>13,500원<del class = "del_price">15,000원</del><span> 10%</span></p>
+        </div><!--product slide txt 끝-->
+        </div>
+      </div>
+    </div>
+  
+  
+  </section>
+
+  <!-- 세번째 -->
+
+
+
+  <div class = "about_banner_imgbox_pc" data-aos="zoom-in">
+    <img src = "./image/port4/about_banner_cut.png" class = "about_pc">
+  </div>
+  <div class = "about_banner_imgbox_m" data-aos="zoom-in">
+    <img src = "./image/port4/about_banner_m.png" class = "about_mobile">
+    <div class = "banner_m_txtbox">
+      <p>#OwnVibe #Self-Esteem #VibrantEnergy <br>
+      고유한 나만의 무드와
+      자신감으로
+      언제나 활기차게!
+    </p>
+    </div>
+  </div>
+
+  <div class = "about_all_wrap">
+    <div class = "about_wrap">
+
+      <div class="about_txt">
+        <p class = "ab_main"  data-aos="fade-right">
+          🍒About Kirsh Blending🍒
+        </p>
+        <p class = "ab_serve"  data-aos="fade-left">
+        키르시 블렌딩은 2015년 설립된 체리 심볼을 가진 <br>
+        의류 브랜드 KIRSH에서 론칭한 'Cosmetic' 브랜드입니다.<br>
+        KIRSH의 발랄하고 키치한 감성을 고스란히 담아<br>
+        자유롭고 입체적인 컬러 블렌딩을 추구합니다. 
+        </p>
+      </div> <!--about_txt 끝-->
+
+      <div class="swiper mySwiper_about">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide about_slide_img"><img src = "./image/port4/lookbook_img0-1.jpg"></div>
+          <div class="swiper-slide about_slide_img"><img src = "./image/port4/lookbook_img0-2.jpg"></div>
+          <div class="swiper-slide about_slide_img"><img src = "./image/port4/lookbook_img1-1.jpg"></div>
+          <div class="swiper-slide about_slide_img"><img src = "./image/port4/lookbook_img1-2.jpg"></div>
+          <div class="swiper-slide about_slide_img"><img src = "./image/port4/lookbook_img2-1.jpg"></div>
+          <div class="swiper-slide about_slide_img"><img src = "./image/port4/lookbook_img2-2.jpg"></div>
+          <div class="swiper-slide about_slide_img"><img src = "./image/port4/lookbook_img3-1.jpg"></div>
+          <div class="swiper-slide about_slide_img"><img src = "./image/port4/lookbook_img3-2.jpg"></div>
+    </div> <!--swiper-wrapper 끝-->
+  </div> <!--mySwiper_about 끝-->
+</div> <!--about_wrap끝-->
+</div> <!--about_all_wrap끝-->
+
+<!-- 네번째 -->
+
+<section>
+
+  <div class = "se04_video">
+    <video src="./image/port4/kirsh_chiikawa_video.mp4" autoplay loop muted playsinline> </video>
+   </div>
+
+</section>
+
+
+<section>
+
+  <div class = "instagram_wrap">
+
+    <div data-aos="fade-up" class = "insta_txt_box">
+      <h1> #KIRSH BLENDING INSTAGRAM🍒</h1>
+      <h4>인스타에서 만날 수 있는 키르시 블렌딩 소식✨</h4>
+    </div>
+
+    <div class = "insta_img_box" data-aos="fade-up" data-aos-duration="3000">
+      <ul class = "insta_img_box_ul">
+        <li class = "insta_img">
+          <a href="https://www.instagram.com/p/C0yfUIZLRLP/">
+          <img src = "./image/port4/insta_img1-1.jpg">
+          <p class = "insta_hover_txt">
+            살짝 뮤트한 느낌의 #웜톤메이크업 따라하기🍂<br>
+             #먼작귀에디션 3종으로 완성해보세요😋
+          </p>
+        </a>
+        </li>
+        <li class = "insta_img">
+          <a href="https://www.instagram.com/p/C0vLQXxLYQ1/?img_index=1">
+          <img src = "./image/port4/insta_img1-2.jpg">
+          <p class = "insta_hover_txt">
+            슬림한 #먼작귀글리터 로 섬세한<br>
+            아이 메이크업 👀✨
+          </p>
+        </a>
+        </li>
+        <li class = "insta_img">
+          <a href="https://www.instagram.com/p/C0qxc6hrXhr/">
+          <img src = "./image/port4/insta_img1-3.jfif">
+          <p class = "insta_hover_txt">
+            먼작귀 에디션 공식 출시 프로모션<br>
+            절찬 진행 중 ❤️‍🔥
+          </p>
+        </a>
+        </li>
+      </ul>
+      <ul class = "insta_img_box_ul">
+        <li class = "insta_img">
+          <a href="https://www.instagram.com/p/C0lhSTprTDS/?img_index=1">
+          <img src = "./image/port4/insta_img2-1.jpg">
+          <p class = "insta_hover_txt">
+            꿈결처럼 반짝이는 무드 속 🦄 <br>
+            유난히 영롱하게 반짝이는 눈매를 완성한 <br>
+            키르시 블렌딩 아이 듀 글리터 젤 👀✨
+          </p>
+        </a>
+        </li>
+        <li class = "insta_img">
+          <a href="https://www.instagram.com/p/C0jHgQqr57k/">
+          <img src = "./image/port4/insta_img2-2.jpg">
+          <p class = "insta_hover_txt">
+            마지막 제품, #먼작귀글리터 까지 <br>
+            #먼작귀에디션 풀 라인업 출시 완료!
+          </p>
+        </a>
+        </li>
+        <li class = "insta_img">
+          <a href="https://www.instagram.com/p/C0iflQZLnsP/?img_index=1">
+          <img src = "./image/port4/insta_img2-3.jpg">
+          <p class = "insta_hover_txt">
+            먼작귀 글리터 출시! 🎊🎊
+          </p>
+        </a>
+        </li>
+      </ul>
+      <ul class = "insta_img_box_ul">
+        <li class = "insta_img">
+          <a href="https://www.instagram.com/p/C0ge7werU5l/?img_index=1">
+          <img src = "./image/port4/insta_img3-1.jpg">
+          <p class = "insta_hover_txt">
+            🎉 먼작귀 글리터 출시 프로모션 🎉 <br>
+            내일! 12/7 (목) 오후 1시 OPEN
+          </p>
+        </a>
+        </li>
+        <li class = "insta_img">
+          <a href="https://www.instagram.com/p/Cz8BlUzr-lo/?img_index=1">
+          <img src = "./image/port4/insta_img3-2.jpg">
+          <p class = "insta_hover_txt">
+            이번 먼작귀 에디션과 함께 사은품으로 준비한 <br>
+            깜찍한 미니 브러시 4종 세트 (입틀막🙊)
+          </p>
+        </a>
+        </li>
+        <li class = "insta_img">
+          <a href="https://www.instagram.com/p/Cz0SeYQrW0W/">
+          <img src = "./image/port4/insta_img3-3.jpg">
+          <p class = "insta_hover_txt">
+            먼가 작고 귀여운 콜라보레이션🤭 <br>
+            🎉 키르시 블렌딩 X 먼작귀 🎉
+          </p>
+        </a>
+        </li>
+      </ul>
+    </div>
+
+  <!-- 인스타 swiper (모바일) -->
+
+
+<div class = "insta_swiper_wrap">
+<div class="swiper insta_swiper">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide insta_img_m">
+      <a href="https://www.instagram.com/p/C0yfUIZLRLP/">
+        <img src = "./image/port4/insta_img1-1.jpg">
+        <p class = "insta_hover_txt_m">
+          살짝 뮤트한 느낌의<br>
+          #웜톤메이크업 따라하기🍂<br>
+           #먼작귀에디션 3종으로<br>
+           완성해보세요😋
+        </p>
+      </a>
+    </div>
+		<div class="swiper-slide insta_img_m">
+      <a href="https://www.instagram.com/p/C0vLQXxLYQ1/?img_index=1">
+        <img src = "./image/port4/insta_img1-2.jpg">
+        <p class = "insta_hover_txt_m">
+          슬림한 #먼작귀글리터 로 섬세한<br>
+          아이 메이크업 👀✨
+        </p>
+      </a>
+    </div>
+		<div class="swiper-slide insta_img_m">
+      <a href="https://www.instagram.com/p/C0qxc6hrXhr/">
+        <img src = "./image/port4/insta_img_m1-3.jpg">
+        <p class = "insta_hover_txt_m">
+          먼작귀 에디션 공식 출시 프로모션<br>
+          절찬 진행 중 ❤️‍🔥
+        </p>
+      </a>
+    </div>
+		<div class="swiper-slide insta_img_m">
+      <a href="https://www.instagram.com/p/C0lhSTprTDS/?img_index=1">
+        <img src = "./image/port4/insta_img2-1.jpg">
+        <p class = "insta_hover_txt_m">
+          꿈결처럼 반짝이는 무드 속 🦄 <br>
+          유난히 영롱하게 반짝이는 눈매를 완성한 <br>
+          키르시 블렌딩 아이 듀 글리터 젤 👀✨
+        </p>
+      </a>
+    </div>
+		<div class="swiper-slide insta_img_m">
+      <a href="https://www.instagram.com/p/C0jHgQqr57k/">
+        <img src = "./image/port4/insta_img2-2.jpg">
+        <p class = "insta_hover_txt_m">
+          마지막 제품, #먼작귀글리터 까지 <br>
+          #먼작귀에디션 풀 라인업 출시 완료!
+        </p>
+      </a>
+    </div>
+		<div class="swiper-slide insta_img_m">
+      <a href="https://www.instagram.com/p/C0iflQZLnsP/?img_index=1">
+        <img src = "./image/port4/insta_img2-3.jpg">
+        <p class = "insta_hover_txt_m">
+          먼작귀 글리터 출시! 🎊🎊
+        </p>
+      </a>
+    </div>
+		<div class="swiper-slide insta_img_m">
+      <a href="https://www.instagram.com/p/C0ge7werU5l/?img_index=1">
+        <img src = "./image/port4/insta_img3-1.jpg">
+        <p class = "insta_hover_txt_m">
+          🎉 먼작귀 글리터 출시 프로모션 🎉 <br>
+          내일! 12/7 (목) 오후 1시 OPEN
+        </p>
+      </a>
+    </div>
+		<div class="swiper-slide insta_img_m">
+      <a href="https://www.instagram.com/p/Cz8BlUzr-lo/?img_index=1">
+        <img src = "./image/port4/insta_img3-2.jpg">
+        <p class = "insta_hover_txt_m">
+          이번 먼작귀 에디션과 함께<br>
+          사은품으로 준비한 <br>
+          깜찍한 미니 브러시 4종 세트<br>
+          (입틀막🙊)
+        </p>
+      </a>
+    </div>
+		<div class="swiper-slide insta_img_m">
+      <a href="https://www.instagram.com/p/Cz0SeYQrW0W/">
+        <img src = "./image/port4/insta_img3-3.jpg">
+        <p class = "insta_hover_txt_m">
+          먼가 작고 귀여운 콜라보레이션🤭 <br>
+          🎉 키르시 블렌딩 X 먼작귀 🎉
+        </p>
+      </a>
+    </div>
+	</div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+
+</div> <!--swiper insta wrap 끝-->
+
+
+</div>
+
+</section>
+
+<footer>
+
+  <div class = "footer_wrap">
+
+
+  <div class = "footer_icon">
+    <img src = "./image/port4/f_logo_white.png">
+  </div> <!--footer_icon 끝-->
+
+  <div class = "footer_box">
+
+
+  <div class = "footer_cs">
+    <h5>CONTACT US</h5>
+    <ul>
+      <li><i class = "xi-user"></i> CEO. Sung Hun Cho</li>
+      <li><i class = "xi-call"></i> 070-8098-3950 </li>
+      <li><i class = "xi-mail"></i> CS/Collaboration : kirshblending@gmail.com </li>
+      <li><i class = "xi-mail"></i> Business Contact : jason.lim@hibs.co.kr </li>
+      <li><i class = "xi-user-address"></i> Adress : 802 PDC Building A-Dong 8F, 242, Pangyo-ro, Bundang-gu, Seongnam-si, Gyeonggi-do</li>
+    </ul>
+
+  </div> <!--CS 끝-->
+
+  <div class = "footer_store">
+    <h5>STORE</h5>
+    <ul>
+      <li>OFFLINE</li>
+      <li>OLIVEYOUNG</li>
+      <li>MUSINSA</li>
+      <li>NAVER</li>
+      <li>SMART STORE</li>
+      <li>ABLY</li>
+      <li>ZIGZAG</li>
+      <li>TAOBAO</li>
+    </ul>
+  </div> <!--store 끝-->
+
+</div> <!--footer_box 끝-->
+
+
+</div> <!--footer_wrap 끝-->
+
+<div class = "footer_bottom">
+
+  <div>
+  
+    <div>KIRSH BLENDING</div>
+  
+    <div>yeabin portfolio</div>
+  
+    <div>
+      <a href="https://twitter.com/KIRSHBLENDING"><i class="xi-twitter"></i></a>
+      <a href="https://www.facebook.com/p/Kirshblending%ED%82%A4%EB%A5%B4%EC%8B%9C%EB%B8%94%EB%A0%8C%EB%94%A9-100063940657628/?paipv=0&eav=AfYU5oRR7yPfe_t8YJH92tLGv0smF5QW5x88I8HpfFF4vFaQZ-E12gExnwYjJmxH_zQ&_rdr"><i class="xi-facebook"></i></a>
+      <a href="https://www.instagram.com/kirsh_blending/"><i class="xi-instagram"></i></a>
+    </div>
+  
+  
+  </div>
+  
+  
+  </div> <!--bottom 끝-->
+
+
+</footer>
+
+<!-- 애니메이션 -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!-- 슬라이드  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- 첫번째 슬라이드 -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    direction: "vertical",
+    loop:true,
+    effect: "fade",
+    mousewheel: true,
+    autoplay: {
+    delay: 4000,
+  },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+  </script>
+<!-- 두번째 슬라이드 -->
+<script>
+  var swiper = new Swiper(".mySwiper2", {
+    slidesPerView: 3,
+    loop: true,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints:{
+      200 : {
+        slidesPerView:1
+      },
+      300 : {
+        slidesPerView:1
+      },
+      400 : {
+        slidesPerView:1
+      },
+      500:{
+        slidesPerView:1
+      },
+      768:{
+        slidesPerView:2
+      },
+      1024:{
+        slidesPerView:3
+      },
+    }
+  });
+
+
+  var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 2,
+   //slidesPerColumnFill: "row",
+   slidesPerGroup: 2,
+      spaceBetween: 20,
+      autoplay: {
+    delay: 6000,
+  },
+      loop:true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+
+    // 메뉴 내렸을 때 메뉴바 컬러 변경 
+
+    var menu = document.querySelector('.header_menu_wrap');
+    var menuHeight = menu.getBoundingClientRect().height;
+
+    document.addEventListener('scroll',()=>{
+      if(window.scrollY > menuHeight) {
+        menu.classList.add('active');
+      } else {
+        menu.classList.remove('active');
+      }
+    })
+
+    var about_ww = $(window).width();
+
+    var swiper = new Swiper(".mySwiper_about", {
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      loop:true,
+      autoplay: {
+    delay: 4000,
+  },
+  breakpoints:{
+      200 : {
+        slidesPerView:1
+      },
+      300: {
+        slidesPerView:1
+      },
+      400:{
+        slidesPerView:1
+      },
+
+      500:{
+        slidesPerView:1
+      },
+      768:{
+        slidesPerView:1
+      },
+      1024:{
+        slidesPerView:2
+      },
+    }
+    });
+
+
+</script>
+
+
+
+
+<script>
+
+
+var insta_ww = $(window).width();
+var insta_mySwiper = undefined;
+
+function insta_mobile_Swiper() {
+
+  if (insta_ww <= 1230 && insta_mySwiper == undefined) {
+  insta_mySwiper = new Swiper(".insta_swiper", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    // simulateTouch : true,
+    loop:true,
+    // autoplay : {
+    //   delay : 2000,
+    //   disableOnInteraction: false,
+    // },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
+} else if ( insta_ww > 1230 && insta_mySwiper != undefined) {
+  insta_mySwiper.destroy();
+  insta_mySwiper = undefined;
+}
+
+}
+
+insta_mobile_Swiper();
+
+$(window).on('resize',function() {
+  insta_ww = $(window).width();
+  insta_mobile_Swiper();
+})
+
+
+
+</script>
+</body>
+
+
+</html>
